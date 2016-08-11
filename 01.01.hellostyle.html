@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>Hello React</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="app">
+	<!--my app renders here -->
+	</div>
+	<!--setting up and using the React library -->
+	<script src="./react/build/react.js"></script>
+	<script src="./react/build/react-dom.js"></script>
+	<!--Render a React component in a DOM location of your choice-->
+	<script>
+		ReactDOM.render(
+			React.DOM.h1(
+			{
+				style:{
+					background: "black",
+					color: "white",
+					fontFamily: "Verdana",
+				}
+			}, 
+			"Hello World!"
+		),
+			document.getElementById("app")
+		);
+	</script>
+</body>
+</html>
